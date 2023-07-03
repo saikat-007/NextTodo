@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+.header > div h2 {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+.header > article {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header > article > a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgb(51, 51, 51);
+  width: 10rem;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(51, 51, 51);
+  border: 1px solid rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.header > article > a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
+}
+.header > article > a:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.footer {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(51, 51, 51);
+  position: fixed;
+  bottom: 0%;
+  z-index: -1;
+  display: flex;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer > article {
+  width: 100%;
+}
+.footer > article h2 {
+  font-size: 2.8rem;
+  margin: 0 4rem;
+  font-weight: 100;
+  color: #e7e7e7;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+.footer > article p {
+  padding: 2rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1rem;
+  font: 100 0.75rem "Quicksand", sans-serif;
+  width: 60%;
+  margin: 0 5rem;
+  line-height: 300%;
+}
+.footer > aside {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 1rem;
+  gap: 1rem;
+}
+.footer > aside h4 {
+  font-size: 1.8rem;
+  color: rgb(49, 211, 81);
+  text-transform: uppercase;
+}
+.footer > aside a {
+  color: white;
+  font-weight: 200;
+  line-height: 180%;
+}
+
+footer {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  z-index: -2;
+  position: absolute;
+}
+
+.login > section {
+  margin: auto;
+  max-width: 900px;
+  width: 100%;
+  height: unset;
+  padding: 2rem;
+  min-height: 80%;
+  background-color: rgb(255, 255, 255);
+}
+.login > section > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.login > section > form input,
+.login > section > form select {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #e7e7e7;
+  font: 400 1rem "Quicksand", sans-serif;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+.login > section > form input > option,
+.login > section > form select > option {
+  font: inherit;
+}
+.login > section > form button {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgb(51, 51, 51);
+  width: 18.75rem;
+  padding: 1rem 3rem;
+  background-color: rgb(51, 51, 51);
+  border: 1px solid rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.login > section > form button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
+}
+.login > section > form button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .login {
+    padding: 0;
+  }
+}
+a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.home {
+  text-align: center;
+}
+.home .heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: rgb(51, 51, 51);
+  padding-top: 10vmax;
+}
+.home p {
+  margin: 2rem 0;
+  font-weight: 900;
+}
+
+.todosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: 900px;
+  width: 100%;
+  height: unset;
+  padding: 3rem 0;
+}
+
+.todo {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+}
+.todo > div:last-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.todo input {
+  width: 2rem;
+  height: 2rem;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: rgb(51, 51, 51);
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.btn {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgb(51, 51, 51);
+  width: 10rem;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(51, 51, 51);
+  border: 1px solid rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
+}
+.btn:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #e7e7e7;
+  padding: 5rem 2rem;
+  background-color: #e7e7e7;
+}/*# sourceMappingURL=app.css.map */
